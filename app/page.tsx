@@ -5,7 +5,7 @@ import FutureEvents from "@/components/Home/FutureEvents";
 import Help from "@/components/Home/Help";
 import Hero from "@/components/Home/Hero";
 import Newsletter from "@/components/Home/NewsLetter";
-import Tesstimonial from "@/components/Home/Testimonial";
+import Testimonial from "@/components/Home/Testimonial";
 import UrgentDonation from "@/components/Home/UrgentDonation";
 import Volunteer from "@/components/SharedComponent/Volunteer";
 import Banner from "@/components/UI/Banner";
