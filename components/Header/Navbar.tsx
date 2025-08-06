@@ -6,6 +6,7 @@ import X from "../Svg/X";
 import Menu from "../Svg/Menu";
 import Down from "../Svg/Down";
 import { BsFacebook, BsInstagram, BsWhatsapp, BsYoutube } from "react-icons/bs";
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,32 +15,37 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
   const [hasMounted, setHasMounted] = useState(false);
 
+  const t = useTranslations("Navbar");
+
   const subLinks = [
-    { title: "О нас", path: "/about" },
-    { title: "Популярные направления", path: "/popular-sides" },
+    { title: t("about"), path: "/about" },
+    { title: t("popularSides"), path: "/popular-sides" },
     {
-      title: "Пациентам",
+      title: t("patients.title"),
       path: "/patients",
       submenu: [
-        { title: "Как это работает", path: "/patients" },
-        { title: "Вопросы и ответы", path: "/patients/faq" },
-        { title: "Отзывы", path: "/patients/testimonials" },
-        { title: "Медицинская виза", path: "/patients/visa" },
-        { title: "Поддержка на месте", path: "/patients/support" },
+        { title: t("patients.howItWorks"), path: "/patients" },
+        { title: t("patients.faq"), path: "/patients/faq" },
+        { title: t("patients.testimonials"), path: "/patients/testimonials" },
+        { title: t("patients.visa"), path: "/patients/visa" },
+        { title: t("patients.support"), path: "/patients/support" },
       ],
     },
     {
-      title: "Процедуры",
+      title: t("procedures.title"),
       path: "/",
       submenu: [
-        { title: "Хирургия", path: "/procedures/surgery" },
-        { title: "Стоматология", path: "/procedures/dentistry" },
-        { title: "Диагностика", path: "/procedures/diagnostics" },
-        { title: "Эстетическая медицина", path: "/procedures/aesthetic" },
-        { title: "Реабилитация", path: "/procedures/rehabilitation" },
+        { title: t("procedures.surgery"), path: "/procedures/surgery" },
+        { title: t("procedures.dentistry"), path: "/procedures/dentistry" },
+        { title: t("procedures.diagnostics"), path: "/procedures/diagnostics" },
+        { title: t("procedures.aesthetic"), path: "/procedures/aesthetic" },
+        {
+          title: t("procedures.rehabilitation"),
+          path: "/procedures/rehabilitation",
+        },
       ],
     },
-    { title: "Контакты", path: "/contact" },
+    { title: t("contact"), path: "/contact" },
   ];
 
   useEffect(() => {
@@ -66,7 +72,7 @@ const Navbar = () => {
         <Link href="/">
           <div className="flex items-center gap-3">
             <Image
-              src="/Logo.jpeg"
+              src="/Logo-removebg.png"
               alt="Adal Medicine Logo"
               width={50}
               height={50}
@@ -93,18 +99,22 @@ const Navbar = () => {
             open ? "block bg-white" : "hidden"
           }`}
         >
-          <Link
-            href={"/"}
+          <a
+            href="https://www.youtube.com/@AdalMedicine"
             className="block py-2 font-medium text-red-600 hover:text-red-700"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <BsYoutube className="w-5 h-5" />
-          </Link>
-          <Link
-            href={"/"}
+          </a>
+          <a
+            href="https://www.instagram.com/adal_medicine/"
             className="block py-2 font-medium text-pink-600 hover:text-pink-700"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <BsInstagram className="w-5 h-5" />
-          </Link>
+          </a>
           <Link
             href={"/"}
             className="block py-2 font-medium text-green-600 hover:text-green-700"

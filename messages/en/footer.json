@@ -1,0 +1,27 @@
+{
+  "description": "ADAL MEDICINE — your trusted platform for medical solutions and online consultations.",
+  "copyright": "© 2025 ADAL MEDICINE. All rights reserved.",
+  "sections": {
+    "about": {
+      "title": "About Us",
+      "services": "Our Services",
+      "pricing": "Pricing",
+      "support": "Support",
+      "testimonials": "Testimonials"
+    },
+    "info": {
+      "title": "Information",
+      "howItWorks": "How It Works",
+      "media": "Media Materials",
+      "updates": "Updates",
+      "news": "News"
+    },
+    "community": {
+      "title": "Community",
+      "chat": "Join the Chat",
+      "instagram": "Follow us on Instagram",
+      "newsletter": "Newsletter Subscription",
+      "forum": "Forum Discussions"
+    }
+  }
+}

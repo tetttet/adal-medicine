@@ -1,0 +1,15 @@
+{
+  "subscribe": {
+    "label": "Subscription Updates",
+    "title": "Receive Helpful Medical Information",
+    "description": "Subscribe to the Adal Medicine newsletter and be the first to learn about new medical programs, innovative treatments, and trusted clinics. Only relevant and useful content — nothing unnecessary.",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "button": "Subscribe",
+    "agreement": "I agree to the terms of personal data processing"
+  },
+  "blog": {
+    "latest": "Latest Articles and News",
+    "viewAll": "View All"
+  }
+}

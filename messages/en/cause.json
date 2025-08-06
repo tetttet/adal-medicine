@@ -1,0 +1,62 @@
+{
+  "title": "Popular Treatment Areas",
+  "subtitle": "We select optimal treatment solutions based on diagnosis, budget, and patient preferences. Here are some of the most in-demand areas:",
+  "services": {
+    "kidney-treatment": {
+      "title": "Diagnosis and Treatment of Kidney Diseases",
+      "text": "Comprehensive kidney check-up and treatment: ultrasound, lab tests, nephrologist consultations. Personalized therapy in top-tier clinics in Istanbul.",
+      "raised": "$980",
+      "goal": "$1,500"
+    },
+    "checkup": {
+      "title": "Comprehensive One-Day Check-Up",
+      "text": "Full body examination: lab tests, ultrasound, consultations with a general practitioner and specialists. Fast, convenient, and accurate.",
+      "raised": "$450",
+      "goal": "$750"
+    },
+    "surgery": {
+      "title": "Modern Surgery in Turkey",
+      "text": "Organization of surgical procedures: from planning to rehabilitation. Advanced equipment, experienced surgeons, and personalized care.",
+      "raised": "$3,500",
+      "goal": "$7,000"
+    },
+    "oncology": {
+      "title": "Oncology: Diagnosis and Treatment",
+      "text": "Proven diagnostic methods, targeted therapy, chemo- and radiotherapy. Support from the first step to the complete course.",
+      "raised": "$4,800",
+      "goal": "$10,000"
+    },
+    "ivf": {
+      "title": "IVF and Reproductive Medicine",
+      "text": "IVF programs and support for families dreaming of a child. High success rates, certified clinics, and care at every stage.",
+      "raised": "$2,900",
+      "goal": "$5,500"
+    },
+    "cardiology": {
+      "title": "Cardiology: Diagnostics and Treatment",
+      "text": "Heart ultrasound, coronary angiography, treatment of arrhythmias and ischemia. In collaboration with Turkey’s leading cardiologists.",
+      "raised": "$1,200",
+      "goal": "$2,800"
+    },
+    "spine": {
+      "title": "Spine Treatment and Back Pain Relief",
+      "text": "MRI diagnostics, consultations with neurosurgeons, minimally invasive surgeries, and rehabilitation. Pain-free path to a new life.",
+      "raised": "$2,200",
+      "goal": "$4,500"
+    },
+    "rehabilitation": {
+      "title": "Post-Surgery and Injury Rehabilitation",
+      "text": "Recovery programs under the guidance of physiotherapists and rehabilitation specialists. Personalized, effective, and caring.",
+      "raised": "$800",
+      "goal": "$2,000"
+    },
+    "gynecology": {
+      "title": "Women’s Health and Gynecology",
+      "text": "Diagnosis, treatment, and surgery for gynecological conditions. Modern equipment and support from female doctors.",
+      "raised": "$600",
+      "goal": "$1,200"
+    }
+  },
+  "price_min_label": "Minimum amount",
+  "price_goal_label": "Estimated cost"
+}

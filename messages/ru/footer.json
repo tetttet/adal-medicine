@@ -1,0 +1,27 @@
+{
+  "description": "ADAL MEDICINE — ваша надёжная платформа для медицинских решений и онлайн-консультаций.",
+  "copyright": "© 2025 ADAL MEDICINE. Все права защищены.",
+  "sections": {
+    "about": {
+      "title": "О нас",
+      "services": "Наши услуги",
+      "pricing": "Цены",
+      "support": "Поддержка",
+      "testimonials": "Отзывы"
+    },
+    "info": {
+      "title": "Информация",
+      "howItWorks": "Как это работает",
+      "media": "Медиа материалы",
+      "updates": "Обновления",
+      "news": "Новости"
+    },
+    "community": {
+      "title": "Сообщество",
+      "chat": "Присоединиться к чату",
+      "instagram": "Следите за нами в Instagram",
+      "newsletter": "Подписка на рассылку",
+      "forum": "Обсуждения на форуме"
+    }
+  }
+}

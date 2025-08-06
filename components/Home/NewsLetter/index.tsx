@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { getAllPosts } from "@/utils/markdown";
 import BlogCard from "./blogCard";
+import { useTranslations } from "next-intl";
 
 const Newsletter = () => {
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
+  const t = useTranslations("Newsletter");
+
   return (
     <section className="lg:py-28 py-16 dark:bg-dark">
       <div className="container mx-auto px-4 max-w-7xl">
@@ -12,30 +15,27 @@ const Newsletter = () => {
           <div data-aos="fade-left">
             <div className="mb-8">
               <p className="text-base text-primary mb-3">
-                Подписка на обновления
+                {t("subscribe.label")}
               </p>
               <h2 className="text-3xl font-semibold mb-6">
-                Получайте полезную медицинскую информацию
+                {t("subscribe.title")}
               </h2>
               <p className="text-base text-muted dark:text-white/60">
-                Подпишитесь на рассылку Adal Medicine и первыми узнавайте о
-                новых медицинских программах, инновационных методах лечения и
-                проверенных клиниках. Только актуальные и полезные материалы —
-                ничего лишнего.
+                {t("subscribe.description")}
               </p>
             </div>
             <form>
               <div className="mb-6">
                 <input
                   type="text"
-                  placeholder="Ваше имя"
+                  placeholder={t("subscribe.namePlaceholder")}
                   className="w-full p-4 border border-border dark:border-dark_border focus:border-primary dark:focus:border-primary dark:bg-dark rounded-sm focus-visible:outline-hidden"
                 />
               </div>
               <div className="mb-6">
                 <input
                   type="email"
-                  placeholder="Ваш email"
+                  placeholder={t("subscribe.emailPlaceholder")}
                   className="w-full p-4 border border-border dark:border-dark_border focus:border-primary dark:focus:border-primary dark:bg-dark rounded-sm focus-visible:outline-hidden"
                 />
               </div>
@@ -44,7 +44,7 @@ const Newsletter = () => {
                   type="submit"
                   className="text-white bg-gradient-to-r from-teal-500 to-teal-400 px-7 py-4 rounded-sm w-full transition-all duration-300 hover:from-teal-600 hover:to-teal-500"
                 >
-                  Подписаться
+                  {t("subscribe.button")}
                 </button>
               </div>
               <div className="flex items-center gap-2 mb-6">
@@ -53,7 +53,7 @@ const Newsletter = () => {
                   htmlFor="condition"
                   className="text-base text-muted dark:text-white/60"
                 >
-                  Я согласен с условиями обработки персональных данных
+                  {t("subscribe.agreement")}
                 </label>
               </div>
             </form>
@@ -63,13 +63,13 @@ const Newsletter = () => {
           <div className="lg:mt-0 mt-8">
             <div className="flex justify-between items-center border-b border-border dark:border-dark_border pb-6 mb-8">
               <h4 className="text-base mb-0 font-semibold">
-                Последние статьи и новости
+                {t("blog.latest")}
               </h4>
               <Link
                 href="/blog"
                 className="text-teal-500 hover:text-teal-400 text-base transition"
               >
-                Смотреть все
+                {t("blog.viewAll")}
               </Link>
             </div>
             {posts.slice(0, 3).map((blog, i) => (

@@ -1,9 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 const Banner = () => {
   const [visible, setVisible] = useState(true);
+  const t = useTranslations("Banner");
 
   return (
     <AnimatePresence>
@@ -18,15 +21,15 @@ const Banner = () => {
           <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-start justify-between text-gray-900 sm:items-center md:px-8">
             <div className="flex-1 justify-center flex items-start gap-x-4 sm:items-center">
               <div className="flex-none px-4 py-1.5 rounded-full bg-[#E0F0F8] text-[#007AFF] text-sm font-medium">
-                Обновление
+                {t("badge")}
               </div>
               <p className="font-medium text-sm sm:text-base">
-                Мы запустили новую версию нашей медицинской платформы!{" "}
+                {t("message")}{" "}
                 <a
                   href="#"
                   className="font-semibold text-[#007AFF] underline underline-offset-2 hover:opacity-80 inline-flex items-center gap-x-1 transition"
                 >
-                  Узнать больше
+                  {t("learnMore")}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -45,7 +48,7 @@ const Banner = () => {
             <button
               onClick={() => setVisible(false)}
               className="p-2 rounded-full hover:bg-gray-100 transition"
-              aria-label="Закрыть уведомление"
+              aria-label={t("closeAriaLabel")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

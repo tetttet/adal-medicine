@@ -1,0 +1,21 @@
+{
+  "about": "About Us",
+  "popularSides": "Popular Directions",
+  "patients": {
+    "title": "For Patients",
+    "howItWorks": "How It Works",
+    "faq": "FAQ",
+    "testimonials": "Testimonials",
+    "visa": "Medical Visa",
+    "support": "On-Site Support"
+  },
+  "procedures": {
+    "title": "Procedures",
+    "surgery": "Surgery",
+    "dentistry": "Dentistry",
+    "diagnostics": "Diagnostics",
+    "aesthetic": "Aesthetic Medicine",
+    "rehabilitation": "Rehabilitation"
+  },
+  "contact": "Contact"
+}

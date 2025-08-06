@@ -1,0 +1,21 @@
+{
+  "about": "О нас",
+  "popularSides": "Популярные направления",
+  "patients": {
+    "title": "Пациентам",
+    "howItWorks": "Как это работает",
+    "faq": "Вопросы и ответы",
+    "testimonials": "Отзывы",
+    "visa": "Медицинская виза",
+    "support": "Поддержка на месте"
+  },
+  "procedures": {
+    "title": "Процедуры",
+    "surgery": "Хирургия",
+    "dentistry": "Стоматология",
+    "diagnostics": "Диагностика",
+    "aesthetic": "Эстетическая медицина",
+    "rehabilitation": "Реабилитация"
+  },
+  "contact": "Контакты"
+}

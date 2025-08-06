@@ -1,12 +1,96 @@
 "use client";
-import { CauseData } from "@/data";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Causes = () => {
+  const t = useTranslations("Cause");
+
+  const CauseData: {
+    image: string;
+    title: string;
+    slug: string;
+    text: string;
+    raised: string;
+    goal: string;
+  }[] = [
+    {
+      image: "/images/services/kidney.avif",
+      title: t("services.kidney-treatment.title"),
+      slug: "kidney-treatment",
+      text: t("services.kidney-treatment.text"),
+      raised: t("services.kidney-treatment.raised"),
+      goal: t("services.kidney-treatment.goal"),
+    },
+    {
+      image: "/images/services/checkup.avif",
+      title: t("services.checkup.title"),
+      slug: "checkup",
+      text: t("services.checkup.text"),
+      raised: t("services.checkup.raised"),
+      goal: t("services.checkup.goal"),
+    },
+    {
+      image: "/images/services/surgery.avif",
+      title: t("services.surgery.title"),
+      slug: "surgery",
+      text: t("services.surgery.text"),
+      raised: t("services.surgery.raised"),
+      goal: t("services.surgery.goal"),
+    },
+    {
+      image: "/images/services/oncology.avif",
+      title: t("services.oncology.title"),
+      slug: "oncology",
+      text: t("services.oncology.text"),
+      raised: t("services.oncology.raised"),
+      goal: t("services.oncology.goal"),
+    },
+    {
+      image: "/images/services/ivf.avif",
+      title: t("services.ivf.title"),
+      slug: "ivf",
+      text: t("services.ivf.text"),
+      raised: t("services.ivf.raised"),
+      goal: t("services.ivf.goal"),
+    },
+    {
+      image: "/images/services/heart.avif",
+      title: t("services.cardiology.title"),
+      slug: "cardiology",
+      text: t("services.cardiology.text"),
+      raised: t("services.cardiology.raised"),
+      goal: t("services.cardiology.goal"),
+    },
+    {
+      image: "/images/services/spine.avif",
+      title: t("services.spine.title"),
+      slug: "spine",
+      text: t("services.spine.text"),
+      raised: t("services.spine.raised"),
+      goal: t("services.spine.goal"),
+    },
+    {
+      image: "/images/services/rehab.avif",
+      title: t("services.rehabilitation.title"),
+      slug: "rehabilitation",
+      text: t("services.rehabilitation.text"),
+      raised: t("services.rehabilitation.raised"),
+      goal: t("services.rehabilitation.goal"),
+    },
+    {
+      image: "/images/services/gynecology.avif",
+      title: t("services.gynecology.title"),
+      slug: "gynecology",
+      text: t("services.gynecology.text"),
+      raised: t("services.gynecology.raised"),
+      goal: t("services.gynecology.goal"),
+    },
+  ];
+
   const settings = {
     autoplay: false,
     dots: true,
@@ -31,6 +115,7 @@ const Causes = () => {
       },
     ],
   };
+
   return (
     <section className="lg:py-28 py-16 bg-grey dark:bg-darkmode">
       <div className="container mx-auto px-4">
@@ -38,12 +123,10 @@ const Causes = () => {
           className="text-center text-3xl font-semibold mb-3"
           data-aos="fade-left"
         >
-          Популярные направления лечения
+          {t("title")}
         </h2>
         <p className="text-base text-muted dark:text-white/60 text-center">
-          Мы подбираем оптимальные решения по лечению с учётом диагноза, бюджета
-          и пожеланий пациента. <br className="lg:block hidden" /> Вот некоторые
-          из востребованных направлений:
+          {t("subtitle")}
         </p>
         <div className="mt-20">
           <Slider {...settings}>
@@ -80,13 +163,13 @@ const Causes = () => {
                       <div className="flex gap-4 mt-auto pt-4">
                         <div className="pr-4 border-r-2 dark:border-dark_border">
                           <h4 className="text-muted text-sm dark:text-white/60 mb-1">
-                            Минимальная сумма
+                            {t("price_min_label")}
                           </h4>
                           <h5 className="text-xl">{item.raised}</h5>
                         </div>
                         <div>
                           <h4 className="text-muted text-sm dark:text-white/60 mb-1">
-                            Ориентировочная стоимость
+                            {t("price_goal_label")}
                           </h4>
                           <h5 className="text-xl">{item.goal}</h5>
                         </div>
