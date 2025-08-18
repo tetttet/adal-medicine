@@ -11,7 +11,7 @@ import Volunteer from "@/components/SharedComponent/Volunteer";
 import Banner from "@/components/UI/Banner";
 import Testimonial from "./patients/testimonials/page";
 import FAQ from "@/components/Faq";
-import { faqItems } from "./patients/faq/page";
+import { faqItems } from "@/constant/Info";
 // import Pricing from "@/components/UI/Pricing";
 
 export default function Home() {
