@@ -9,6 +9,9 @@ import Newsletter from "@/components/Home/NewsLetter";
 import UrgentDonation from "@/components/Home/UrgentDonation";
 import Volunteer from "@/components/SharedComponent/Volunteer";
 import Banner from "@/components/UI/Banner";
+import Testimonial from "./patients/testimonials/page";
+import FAQ from "@/components/Faq";
+import { faqItems } from "./patients/faq/page";
 // import Pricing from "@/components/UI/Pricing";
 
 export default function Home() {
@@ -24,8 +27,17 @@ export default function Home() {
       <UrgentDonation />
       {/* <Pricing /> */}
       <Newsletter />
-      {/* f */}
+      {/* <Testimonial /> */}
       <Volunteer />
+
+      <div className="bg-white py-16">
+        <FAQ
+          title="Часто задаваемые вопросы"
+          description="Ответы на ваши вопросы о медицинском туризме"
+          items={faqItems}
+        />
+      </div>
+      <Testimonial />
     </>
   );
 }

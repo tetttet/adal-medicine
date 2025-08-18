@@ -8,9 +8,9 @@ export function ImagesSliderDemo() {
   const t = useTranslations("ImageSlider");
 
   const images = [
-    "/images/hero/hero-1.avif",
-    "/images/hero/hero-2.avif",
-    "/images/hero/hero-3.avif",
+    "/images/hero/IMG_6458.DNG",
+    "/images/hero/1.DNG",
+    "/images/hero/2.DNG",
   ];
   return (
     <ImagesSlider className="h-[40rem]" images={images}>

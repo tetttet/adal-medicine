@@ -15,11 +15,9 @@ export function TracingBeamDemo() {
               {item.badge}
             </h2>
 
-            <p className={twMerge("text-xl mb-4")}>
-              {item.title}
-            </p>
+            <p className={twMerge("text-xl mb-4")}>{item.title}</p>
 
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-sm prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
@@ -40,78 +38,85 @@ export function TracingBeamDemo() {
 
 const dummyContent = [
   {
-    title: "Adal Medicine | Medical Tourism",
+    title: "Adal Medicine | Медицинский туризм в Стамбуле",
     description: (
       <>
         <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
+          Adal Medicine — это больше, чем просто медицинский туризм. Мы помогаем
+          пациентам со всего мира пройти полное обследование и лечение в лучших
+          клиниках Стамбула. Наша команда сопровождает вас от первого звонка и
+          до завершения лечения, предоставляя комплексный сервис: консультации,
+          перелёт, трансфер, проживание, запись к врачам, перевод и полное
+          сопровождение 24/7.
         </p>
+        <br />
         <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
+          Наш приоритет — ваше здоровье и комфорт. Мы сотрудничаем только с
+          клиниками класса «А», которые имеют международные аккредитации и
+          используют современное оборудование. Благодаря этому пациенты получают
+          точную диагностику и доступ к самым передовым методам лечения.
         </p>
+        <br />
         <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
+          Adal Medicine делает медицинский туризм простым и понятным. С нами вы
+          не теряетесь в незнакомой стране — мы всегда рядом, чтобы помочь и
+          поддержать.
         </p>
       </>
     ),
-    badge: "React",
-    image:
-      "https://images.unsplash.com/photo-1633488781325-d36e6818d0c8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDYyfHx8ZW58MHx8fHx8",
+    badge: "О компании",
+    image: "/images/content/IMG_5153.DNG",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Почему выбирают Adal Medicine",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          Мы создали сервис «всё включено», где каждый пациент получает
+          индивидуальный подход. Наша команда помогает подобрать клинику и
+          врача, полностью организует поездку и делает процесс лечения
+          максимально комфортным.
         </p>
+        <br />
         <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
+          Более 1000 пациентов из разных стран уже доверили нам своё здоровье.
+          От простых чекапов до сложных операций — мы контролируем каждый этап
+          пути.
+        </p>
+        <br />
+        <p>
+          Наши ключевые преимущества: международные стандарты качества, опытные
+          врачи, прозрачные цены и круглосуточная поддержка.
         </p>
       </>
     ),
-    badge: "Changelog",
+    badge: "Преимущества",
     image:
       "https://plus.unsplash.com/premium_photo-1661438133415-ca0ec60b8f3d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDY0fHx8ZW58MHx8fHx8",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Наши услуги",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          Мы предлагаем полный спектр медицинских услуг в Стамбуле: чекапы,
+          диагностика, кардиология, онкология, пластическая хирургия,
+          стоматология, репродуктивная медицина и многое другое.
+        </p>
+        <br />
+        <p>
+          Каждый пациент получает программу лечения, адаптированную под его
+          состояние и запросы. Мы работаем только с проверенными клиниками и
+          врачами, чтобы вы могли быть уверены в результате.
+        </p>
+        <br />
+        <p>
+          Adal Medicine — это не просто посредник, а надёжный партнёр, который
+          заботится о вашем здоровье на каждом этапе.
         </p>
       </>
     ),
-    badge: "Launch Week",
-    image:
-      "https://images.unsplash.com/photo-1576089275776-b6cd5deabdad?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDcxfHx8ZW58MHx8fHx8",
+    badge: "Услуги",
+    image: "/images/content/IMG_5144.DNG",
   },
 ];

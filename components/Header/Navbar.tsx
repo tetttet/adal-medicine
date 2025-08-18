@@ -27,7 +27,6 @@ const Navbar = () => {
         { title: t("patients.howItWorks"), path: "/patients" },
         { title: t("patients.faq"), path: "/patients/faq" },
         { title: t("patients.testimonials"), path: "/patients/testimonials" },
-        { title: t("patients.visa"), path: "/patients/visa" },
         { title: t("patients.support"), path: "/patients/support" },
       ],
     },
@@ -35,16 +34,17 @@ const Navbar = () => {
       title: t("procedures.title"),
       path: "/",
       submenu: [
-        { title: t("procedures.surgery"), path: "/procedures/surgery" },
-        { title: t("procedures.dentistry"), path: "/procedures/dentistry" },
-        { title: t("procedures.diagnostics"), path: "/procedures/diagnostics" },
-        { title: t("procedures.aesthetic"), path: "/procedures/aesthetic" },
+        { title: t("procedures.surgery"), path: "/cause/surgery" },
+        { title: t("procedures.dentistry"), path: "/cause/oncology" },
+        { title: t("procedures.diagnostics"), path: "/cause/ivf" },
+        { title: t("procedures.aesthetic"), path: "/cause/cardiology" },
         {
           title: t("procedures.rehabilitation"),
           path: "/procedures/rehabilitation",
         },
       ],
     },
+    { title: t("shop"), path: "/shop" },
     { title: t("contact"), path: "/contact" },
   ];
 
