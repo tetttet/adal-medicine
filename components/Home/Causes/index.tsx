@@ -160,7 +160,7 @@ const Causes = () => {
                       <p className="text-muted dark:text-white/60 text-base pb-6 border-b-2 border-border relative after:content-[''] after:absolute after:w-[70%] after:h-0.5 after:-bottom-0.5 after:left-0 after:bg-gradient-to-r after:from-primary after:to-secondary line-clamp-3">
                         {item.text}
                       </p>
-                      <div className="flex gap-4 mt-auto pt-4">
+                      {/* <div className="flex gap-4 mt-auto pt-4">
                         <div className="pr-4 border-r-2 dark:border-dark_border">
                           <h4 className="text-muted text-sm dark:text-white/60 mb-1">
                             {t("price_min_label")}
@@ -173,7 +173,7 @@ const Causes = () => {
                           </h4>
                           <h5 className="text-xl">{item.goal}</h5>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

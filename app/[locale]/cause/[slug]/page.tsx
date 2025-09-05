@@ -42,7 +42,7 @@ const Cause = () => {
                       Ориентировочная стоимость
                     </p>
                     <h4 className="text-xl text-midnight_text dark:text-white font-semibold">
-                      {item.raised} – {item.goal}
+                      {/* {item.raised} – {item.goal} */} Консультация
                     </h4>
                   </div>
                   <div>

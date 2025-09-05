@@ -1,3 +1,4 @@
+import { WHATSAPP_NUMBER } from "@/constant/links";
 import { useTranslations } from "next-intl";
 
 const Hero = () => {
@@ -38,9 +39,14 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex justify-center">
-              <button className="text-white bg-gradient-to-r from-[#1a9c91] to-[#1ebba6] text-sm px-7 py-4 hover:from-white hover:to-white border font-semibold border-transparent hover:border-[#1ebba6] hover:text-[#1ebba6] rounded-md transition">
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                target="_blank"
+                rel="noreferrer"
+                className="text-white bg-gradient-to-r from-[#1a9c91] to-[#1ebba6] text-sm px-7 py-4 hover:from-white hover:to-white border font-semibold border-transparent hover:border-[#1ebba6] hover:text-[#1ebba6] rounded-md transition"
+              >
                 {t("buttonText")}
-              </button>
+              </a>
             </div>
           </div>
         </div>

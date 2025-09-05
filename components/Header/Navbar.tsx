@@ -44,7 +44,7 @@ const Navbar = () => {
         },
       ],
     },
-    { title: t("shop"), path: "/shop" },
+    // { title: t("shop"), path: "/shop" },
     { title: t("contact"), path: "/contact" },
   ];
 
@@ -115,12 +115,14 @@ const Navbar = () => {
           >
             <BsInstagram className="w-5 h-5" />
           </a>
-          <Link
-            href={"/"}
+          <a
+            href={"https://wa.me/905366227366"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="block py-2 font-medium text-green-600 hover:text-green-700"
           >
             <BsWhatsapp className="w-5 h-5" />
-          </Link>
+          </a>
           <Link
             href={"/"}
             className="block py-2 font-medium text-blue-600 hover:text-blue-700"

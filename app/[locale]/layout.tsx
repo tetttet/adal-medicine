@@ -3,12 +3,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Header/Navbar";
 import TopBar from "@/components/Header/TopBar";
-import Bot from "@/components/Element/bot";
-import Social from "@/components/Element/social";
+// import Social from "@/components/Element/social";
 import Footer from "@/components/Layout/Footer";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
+import { WHATSAPP_NUMBER } from "@/constant/links";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,8 +63,15 @@ export default async function RootLayout({
           {children}
           <Footer />
           <div className="fixed bottom-0 right-6 z-50 flex space-x-4 items-end">
-            <Social />
-            <Bot />
+            {/* <Social /> */}
+            <a
+              className="hidden md:inline-flex bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-t-lg shadow-lg transition-colors"
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              WhatsApp +90 536 622 73 66
+            </a>
           </div>
         </body>
       </html>

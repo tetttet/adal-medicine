@@ -1,10 +1,8 @@
 "use client";
 
-import DonationFormContext from "@/context/donationContext";
-import { useContext } from "react";
+import { WHATSAPP_NUMBER } from "@/constant/links";
 
 const Volunteer = () => {
-  const donationInfo = useContext(DonationFormContext);
   return (
     <section className="lg:py-28 py-16 bg-[url('/images/hero/hero-4.png')] bg-no-repeat bg-cover overflow-hidden relative">
       <div className="container mx-auto max-w-screen-xl px-4">
@@ -19,12 +17,14 @@ const Volunteer = () => {
               стресса — с заботой о вас.
             </p>
             <div className="flex justify-center">
-              <button
-                onClick={() => donationInfo?.setIsDonationOpen(true)}
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white rounded-md bg-gradient-to-r from-primary to-secondary text-sm font-semibold px-7 py-4 hover:from-transparent hover:to-transparent border border-transparent hover:border-primary hover:text-primary"
               >
                 Оставить заявку
-              </button>
+              </a>
             </div>
           </div>
         </div>
